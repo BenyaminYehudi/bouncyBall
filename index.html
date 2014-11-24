@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+.red {
+
+}
+
+div.bounyBall {
+ background-color: gold;
+ width: 50px;
+ height: 50px;
+ position: absolute;
+ -webkit-animation: mymove 20s infinite; /* Chrome, Safari, Opera */ 
+    animation: mymove 20s infinite;
+}
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes mymove {
+    0%   {top: 0px; left: 0px; background: gold;}
+    25%  {top: 0px; left: 100px; background: silver;}
+    50%  {top: 100px; left: 100px; background: gold;}
+    75%  {top: 100px; left: 0px; background: silver;}
+    100% {top: 0px; left: 0px; background: gold;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {top: 0px; left: 0px; background: gold;}
+    25%  {top: 0px; left: 100px; background: silver;}
+    50%  {top: 100px; left: 100px; background: gold;}
+    75%  {top: 100px; left: 0px; background: silver;}
+    100% {top: 0px; left: 0px; background: gold;}
+
+
+</style>
+
+</head>
+<body>
+<
+<div id="main">
+	<div id="sidebar" class="red"></div>
+	<div id="header" class="blue"></div>
+	<div id="add" class="a"></div>
+</div>
+
+
+</body>
+</html>
