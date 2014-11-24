@@ -3,31 +3,28 @@
 <head>
 <style> 
 
-.main {
-	background-color:yellow;
-  display: -webkit-flex;
-  display: flex;
-}
-.red {
-	background-color:red;
-  width: 300px;
-}
-.blue {
-	background-color:blue;
-  -webkit-flex: 1;
-          flex: 1;
-          hight: 60px;
+#main {
+    width: 220px;
+    height: 300px;
+    border: 1px solid black;
+    display: -webkit-flex; /* Safari */
+    display: flex;
 }
 
+#main div {
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */    
+    flex: 1;
+}
 </style>
 
 </head>
 <body>
 
 <div id="main">
-	<div id="sidebar" class="red"></div>
-	<div id="header" class="blue"></div>
-	<div id="add" class="a"></div>
+	<div style="background-color:coral;">RED</div>
+  <div style="background-color:lightblue;">BLUE</div>  
+  <div style="background-color:lightgreen;">Green div with more content.</div>
 </div>
 
 
