@@ -4,6 +4,7 @@
 <style> 
 
 #main {
+	height:100%;
     display: -webkit-flex; /* Safari */
     display: flex;
 }
@@ -13,14 +14,23 @@
     -ms-flex: 1;  /* IE 10 */    
     flex: 1;
 }
+
+.sidebar{
+	width:300px;
+}
+
+.header{
+	height:60px;
+}
+
 </style>
 
 </head>
 <body>
 
 <div id="main">
-	<div style="background-color:coral;">RED</div>
-  <div style="background-color:lightblue;">BLUE</div>  
+	<div style="background-color:coral;" class="sidebar";>RED</div>
+  <div style="background-color:lightblue;" class="header";>BLUE</div>  
   <div style="background-color:lightgreen;">Green div with more content.</div>
 </div>
 
